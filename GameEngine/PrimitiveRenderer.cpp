@@ -336,13 +336,6 @@ bool PrimitiveRenderer::onSegment(const Point2D& p, const Point2D& q, const Poin
 		q.getY() <= std::max(p.getY(), r.getY()) && q.getY() >= std::min(p.getY(), r.getY()));
 }
 
-
-
-
-
-
-
-
 void PrimitiveRenderer::consistencyFill(int x, int y, sf::Color fillColor, sf::Color targetColor) {
 	std::stack<std::pair<int, int>> stack;
 	stack.push(std::make_pair(x, y));
