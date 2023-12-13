@@ -8,7 +8,7 @@ int main() {
     Engine engine(800, 600, "SFML Game");
     engine.initialize();
     // Set FPS
-    engine.setFramesPerSecond(60);
+    engine.setFramesPerSecond(120);
     engine.run();
     return 0;
 }

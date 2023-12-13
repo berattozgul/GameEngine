@@ -74,16 +74,7 @@ void Engine::handleEvents() {
 			}
 		}
 		else if (event.type == sf::Event::KeyPressed) {
-			if (event.key.code == sf::Keyboard::C) { // Press 'C' to clear the screen to cyan color
-				setClearColor(sf::Color::Cyan);
-			}
-			else if (event.key.code == sf::Keyboard::M) { // Press 'M' to clear the screen to magenta color
-				setClearColor(sf::Color::Magenta);
-			}
-			else if (event.key.code == sf::Keyboard::Y) { // Press 'Y' to clear the screen to yellow color
-				setClearColor(sf::Color::Yellow);
-			}
-			else if (event.key.code == sf::Keyboard::B) {
+			if (event.key.code == sf::Keyboard::B) { // Press 'C' to clear the screen to cyan color
 				setClearColor(sf::Color::Black);
 			}
 		}
@@ -124,7 +115,6 @@ void Engine::render() {
 	window.clear(clearColor);
 
 	// Draw using the PrimitiveRenderer
-	primitiveRenderer.drawCircle(300.f, 300.f, 20.f, sf::Color::Green);
 	primitiveRenderer.drawLine(400.f, 400.f, 500.f, 500.f, 5.f, sf::Color::Blue);
 
 	// Draw the input text
@@ -139,7 +129,7 @@ void Engine::render() {
 	Point2D startPoint(500.f, 200.f);
 
 	// Update line length based on elapsed time
-	float lineLength = 100.f + std::sin(clock.getElapsedTime().asSeconds()) * 50.f;
+	float lineLength = 100.f + std::sin(clock.getElapsedTime().asSeconds()) * 100.f;
 	Point2D endPoint(startPoint.getX() + lineLength, startPoint.getY() + lineLength);
 
 	LineSegment lineSegment(startPoint, endPoint);
@@ -149,17 +139,29 @@ void Engine::render() {
 
 
 	// Draw an open polyline using a vector of Point2D
-	std::vector<Point2D> closedPolyLinePoints = { {100.f, 200.f}, {150.f, 250.f}, {200.f, 200.f},{200.f,300.f },{300.f,500.f} };
-	primitiveRenderer.drawPolyline(closedPolyLinePoints, sf::Color::Red, true);
 
-	std::vector<LineSegment> openPolylineSegments = {
-	LineSegment({200.f, 100.f}, {300.f, 150.f}),
-	LineSegment({400.f, 150.f}, {250.f, 200.f}),
-	LineSegment({450.f, 200.f}, {350.f, 100.f})
+	std::vector<LineSegment> openPolygonSegments = {
+	LineSegment({250.f, 200.f}, {250.f, 250.f}),
+	LineSegment({250.f, 250.f}, {300.f, 200.f}),
+	LineSegment({300.f, 200.f}, {300.f, 300.f})
 	};
-	primitiveRenderer.drawPolyline(openPolylineSegments, sf::Color::Green, false);
+	primitiveRenderer.drawPolyline(openPolygonSegments, sf::Color::Magenta, false);
 
-	// Draw the elapsed time
+	primitiveRenderer.drawEllipse(500.f, 300.f, 50.f, 30.f, sf::Color::Green);
+
+	primitiveRenderer.drawCircleSymmetrical(700.f, 300.f, 50.f, sf::Color::Yellow);
+
+	std::vector<Point2D> closedPolyLinePoints = { {100.f, 200.f}, {150.f, 150.f}, {200.f, 200.f}, {200.f, 300.f}, {200.f, 500.f} };
+
+	// Use the borderFill and floodFill methods to fill areas
+	primitiveRenderer.borderFill(75, 75, sf::Color::Yellow, sf::Color::White); // Example of borderFill
+	primitiveRenderer.floodFill(250, 250, sf::Color::Cyan, sf::Color::White); // Example of floodFill
+
+
+	primitiveRenderer.drawFilledPolygon(closedPolyLinePoints, sf::Color::Blue);
+
+	primitiveRenderer.floodFill(100, 300, sf::Color::Black, sf::Color::Red);
+	primitiveRenderer.borderFill(400, 400, sf::Color::Black, sf::Color::Red);
 	sf::Time elapsed = clock.getElapsedTime();
 	std::string timeString = "Elapsed Time: " + std::to_string(elapsed.asSeconds());
 	sf::Text timeText(timeString, font, 24);
@@ -168,6 +170,7 @@ void Engine::render() {
 	window.draw(timeText);
 
 	window.display(); // Display the main window
+
 }
 
 // Run the game loop
