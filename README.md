@@ -11,6 +11,8 @@ This is a simple game engine built using the SFML (Simple and Fast Multimedia Li
 - Support for setting the background color of the window
 - FPS (Frames Per Second) control for smooth animation
 - Logging of errors to both the console and a log file
+- Polyline drawing with support for open and closed shapes
+- Elapsed time display
 
 ## Dependencies
 
