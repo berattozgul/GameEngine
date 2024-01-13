@@ -1,0 +1,226 @@
+\doxysection{Circle Class Reference}
+\hypertarget{class_circle}{}\label{class_circle}\index{Circle@{Circle}}
+
+
+Represents a circle in the game with movement logic.  
+
+
+Inheritance diagram for Circle\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=4.000000cm]{class_circle}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_circle_ab1ffddd2e4bc30788cee7132fb0dde09}{Circle}} (float radius, float x, float y, float speed)
+\begin{DoxyCompactList}\small\item\em Constructor for \doxylink{class_circle}{Circle}. \end{DoxyCompactList}\item 
+float \mbox{\hyperlink{class_circle_a0d19b3d334a0b680a32ccca9ee1f3a6a}{getX}} () const
+\begin{DoxyCompactList}\small\item\em Getter method for the x-\/coordinate of the circle\textquotesingle{}s position. \end{DoxyCompactList}\item 
+float \mbox{\hyperlink{class_circle_a95b7dc25d2e9b1e40a189cd83386a12e}{get\+Radius}} () const
+\begin{DoxyCompactList}\small\item\em Getter method for the radius of the circle. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_circle_a1ed510a363d00367db6b0e98c4050afe}{reset}} (float x, float y)
+\begin{DoxyCompactList}\small\item\em Resets the circle\textquotesingle{}s position to the specified coordinates. \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{class_circle_ae5c33b3278df974adf77bd0ac0d588a9}{draw}} (sf\+::\+Render\+Window \&window) override
+\begin{DoxyCompactList}\small\item\em Draws the circle on the screen. \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{class_circle_a5954bac49397a60792e2b0e0a6285b19}{translate}} (float dx, float dy) override
+\begin{DoxyCompactList}\small\item\em Translates the circle by a given amount. \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{class_circle_af2f94037a44c3cf72187494dcef2b8fd}{rotate}} () override
+\begin{DoxyCompactList}\small\item\em Not implemented for a circle. \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{class_circle_a7a9d493cb811c13b711314c50f3f98b9}{scale}} () override
+\begin{DoxyCompactList}\small\item\em Not implemented for a circle. \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{class_circle_a6573d0e5c9f8246c33800099c3e23004}{update}} () override
+\begin{DoxyCompactList}\small\item\em Updates the circle\textquotesingle{}s position and checks for reset condition. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_circle_a7f478f0f42fbd1360a8957da86befd69}{set\+Speed}} (float new\+Speed)
+\begin{DoxyCompactList}\small\item\em Sets a new speed for the circle. \end{DoxyCompactList}\item 
+sf\+::\+Circle\+Shape \& \mbox{\hyperlink{class_circle_acfd4f2d2b12d987212ee42131bd54eb8}{get\+Shape}} ()
+\begin{DoxyCompactList}\small\item\em Gets the underlying SFML Circle\+Shape object. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Represents a circle in the game with movement logic. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{class_circle_ab1ffddd2e4bc30788cee7132fb0dde09}\label{class_circle_ab1ffddd2e4bc30788cee7132fb0dde09} 
+\index{Circle@{Circle}!Circle@{Circle}}
+\index{Circle@{Circle}!Circle@{Circle}}
+\doxysubsubsection{\texorpdfstring{Circle()}{Circle()}}
+{\footnotesize\ttfamily Circle\+::\+Circle (\begin{DoxyParamCaption}\item[{float}]{radius,  }\item[{float}]{x,  }\item[{float}]{y,  }\item[{float}]{speed }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Constructor for \doxylink{class_circle}{Circle}. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em radius} & The radius of the circle. \\
+\hline
+{\em x} & The x-\/coordinate of the circle\textquotesingle{}s position. \\
+\hline
+{\em y} & The y-\/coordinate of the circle\textquotesingle{}s position. \\
+\hline
+{\em speed} & The speed of the circle\textquotesingle{}s movement. \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_circle_ae5c33b3278df974adf77bd0ac0d588a9}\label{class_circle_ae5c33b3278df974adf77bd0ac0d588a9} 
+\index{Circle@{Circle}!draw@{draw}}
+\index{draw@{draw}!Circle@{Circle}}
+\doxysubsubsection{\texorpdfstring{draw()}{draw()}}
+{\footnotesize\ttfamily virtual void Circle\+::draw (\begin{DoxyParamCaption}\item[{sf\+::\+Render\+Window \&}]{window }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Draws the circle on the screen. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em window} & The SFML render window. \\
+\hline
+\end{DoxyParams}
+
+
+Implements \mbox{\hyperlink{class_shape_object_a09c61fbba350cf4e0bde9c56ca3c7980}{Shape\+Object}}.
+
+\Hypertarget{class_circle_a95b7dc25d2e9b1e40a189cd83386a12e}\label{class_circle_a95b7dc25d2e9b1e40a189cd83386a12e} 
+\index{Circle@{Circle}!getRadius@{getRadius}}
+\index{getRadius@{getRadius}!Circle@{Circle}}
+\doxysubsubsection{\texorpdfstring{getRadius()}{getRadius()}}
+{\footnotesize\ttfamily float Circle\+::get\+Radius (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Getter method for the radius of the circle. 
+
+\begin{DoxyReturn}{Returns}
+The radius of the circle. 
+\end{DoxyReturn}
+\Hypertarget{class_circle_acfd4f2d2b12d987212ee42131bd54eb8}\label{class_circle_acfd4f2d2b12d987212ee42131bd54eb8} 
+\index{Circle@{Circle}!getShape@{getShape}}
+\index{getShape@{getShape}!Circle@{Circle}}
+\doxysubsubsection{\texorpdfstring{getShape()}{getShape()}}
+{\footnotesize\ttfamily sf\+::\+Circle\+Shape \& Circle\+::get\+Shape (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Gets the underlying SFML Circle\+Shape object. 
+
+\begin{DoxyReturn}{Returns}
+A reference to the SFML Circle\+Shape object. 
+\end{DoxyReturn}
+\Hypertarget{class_circle_a0d19b3d334a0b680a32ccca9ee1f3a6a}\label{class_circle_a0d19b3d334a0b680a32ccca9ee1f3a6a} 
+\index{Circle@{Circle}!getX@{getX}}
+\index{getX@{getX}!Circle@{Circle}}
+\doxysubsubsection{\texorpdfstring{getX()}{getX()}}
+{\footnotesize\ttfamily float Circle\+::getX (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Getter method for the x-\/coordinate of the circle\textquotesingle{}s position. 
+
+\begin{DoxyReturn}{Returns}
+The x-\/coordinate of the circle\textquotesingle{}s position. 
+\end{DoxyReturn}
+\Hypertarget{class_circle_a1ed510a363d00367db6b0e98c4050afe}\label{class_circle_a1ed510a363d00367db6b0e98c4050afe} 
+\index{Circle@{Circle}!reset@{reset}}
+\index{reset@{reset}!Circle@{Circle}}
+\doxysubsubsection{\texorpdfstring{reset()}{reset()}}
+{\footnotesize\ttfamily void Circle\+::reset (\begin{DoxyParamCaption}\item[{float}]{x,  }\item[{float}]{y }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Resets the circle\textquotesingle{}s position to the specified coordinates. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em x} & The x-\/coordinate to reset to. \\
+\hline
+{\em y} & The y-\/coordinate to reset to. \\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_circle_af2f94037a44c3cf72187494dcef2b8fd}\label{class_circle_af2f94037a44c3cf72187494dcef2b8fd} 
+\index{Circle@{Circle}!rotate@{rotate}}
+\index{rotate@{rotate}!Circle@{Circle}}
+\doxysubsubsection{\texorpdfstring{rotate()}{rotate()}}
+{\footnotesize\ttfamily virtual void Circle\+::rotate (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Not implemented for a circle. 
+
+
+
+Implements \mbox{\hyperlink{class_shape_object_acb418927c526d6557a2d09f5f79eb791}{Shape\+Object}}.
+
+\Hypertarget{class_circle_a7a9d493cb811c13b711314c50f3f98b9}\label{class_circle_a7a9d493cb811c13b711314c50f3f98b9} 
+\index{Circle@{Circle}!scale@{scale}}
+\index{scale@{scale}!Circle@{Circle}}
+\doxysubsubsection{\texorpdfstring{scale()}{scale()}}
+{\footnotesize\ttfamily virtual void Circle\+::scale (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Not implemented for a circle. 
+
+
+
+Implements \mbox{\hyperlink{class_shape_object_a64ca095ef9cf96247276d08812b97441}{Shape\+Object}}.
+
+\Hypertarget{class_circle_a7f478f0f42fbd1360a8957da86befd69}\label{class_circle_a7f478f0f42fbd1360a8957da86befd69} 
+\index{Circle@{Circle}!setSpeed@{setSpeed}}
+\index{setSpeed@{setSpeed}!Circle@{Circle}}
+\doxysubsubsection{\texorpdfstring{setSpeed()}{setSpeed()}}
+{\footnotesize\ttfamily void Circle\+::set\+Speed (\begin{DoxyParamCaption}\item[{float}]{new\+Speed }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Sets a new speed for the circle. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em new\+Speed} & The new speed of the circle. \\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_circle_a5954bac49397a60792e2b0e0a6285b19}\label{class_circle_a5954bac49397a60792e2b0e0a6285b19} 
+\index{Circle@{Circle}!translate@{translate}}
+\index{translate@{translate}!Circle@{Circle}}
+\doxysubsubsection{\texorpdfstring{translate()}{translate()}}
+{\footnotesize\ttfamily virtual void Circle\+::translate (\begin{DoxyParamCaption}\item[{float}]{dx,  }\item[{float}]{dy }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Translates the circle by a given amount. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em dx} & The translation in the x-\/axis. \\
+\hline
+{\em dy} & The translation in the y-\/axis. \\
+\hline
+\end{DoxyParams}
+
+
+Implements \mbox{\hyperlink{class_shape_object_a47c98eb4084806df56a05e8e8f89fc88}{Shape\+Object}}.
+
+\Hypertarget{class_circle_a6573d0e5c9f8246c33800099c3e23004}\label{class_circle_a6573d0e5c9f8246c33800099c3e23004} 
+\index{Circle@{Circle}!update@{update}}
+\index{update@{update}!Circle@{Circle}}
+\doxysubsubsection{\texorpdfstring{update()}{update()}}
+{\footnotesize\ttfamily virtual void Circle\+::update (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Updates the circle\textquotesingle{}s position and checks for reset condition. 
+
+
+
+Implements \mbox{\hyperlink{class_game_object_ae83128d0e0efef691417779605ee037c}{Game\+Object}}.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{main_8cpp}{main.\+cpp}}\end{DoxyCompactItemize}

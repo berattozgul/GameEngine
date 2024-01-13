@@ -1,0 +1,91 @@
+\doxysection{Player Class Reference}
+\hypertarget{class_player}{}\label{class_player}\index{Player@{Player}}
+
+
+Represents the player character in the game.  
+
+
+Inheritance diagram for Player\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=3.000000cm]{class_player}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_player_a0ed60d1cfd6d3a043a8238dbd4db465c}{Player}} (float x, float y, float speed)
+\begin{DoxyCompactList}\small\item\em Constructor for \doxylink{class_player}{Player}. \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{class_player_af12e01939b4fccf59b2e6ae56e11825d}{draw}} (sf\+::\+Render\+Window \&window) override
+\begin{DoxyCompactList}\small\item\em Draws the player on the screen. \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{class_player_abe7d0a24ffd93ba0bc4eea860b10eb09}{update}} () override
+\begin{DoxyCompactList}\small\item\em Updates the player\textquotesingle{}s position based on keyboard input. \end{DoxyCompactList}\item 
+\Hypertarget{class_player_a408134399497e07b0ba53e82d5c40958}\label{class_player_a408134399497e07b0ba53e82d5c40958} 
+sf\+::\+Sprite \& {\bfseries get\+Sprite} ()
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Represents the player character in the game. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{class_player_a0ed60d1cfd6d3a043a8238dbd4db465c}\label{class_player_a0ed60d1cfd6d3a043a8238dbd4db465c} 
+\index{Player@{Player}!Player@{Player}}
+\index{Player@{Player}!Player@{Player}}
+\doxysubsubsection{\texorpdfstring{Player()}{Player()}}
+{\footnotesize\ttfamily Player\+::\+Player (\begin{DoxyParamCaption}\item[{float}]{x,  }\item[{float}]{y,  }\item[{float}]{speed }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Constructor for \doxylink{class_player}{Player}. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em x} & The x-\/coordinate of the player\textquotesingle{}s position. \\
+\hline
+{\em y} & The y-\/coordinate of the player\textquotesingle{}s position. \\
+\hline
+{\em speed} & The speed of the player\textquotesingle{}s movement. \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_player_af12e01939b4fccf59b2e6ae56e11825d}\label{class_player_af12e01939b4fccf59b2e6ae56e11825d} 
+\index{Player@{Player}!draw@{draw}}
+\index{draw@{draw}!Player@{Player}}
+\doxysubsubsection{\texorpdfstring{draw()}{draw()}}
+{\footnotesize\ttfamily virtual void Player\+::draw (\begin{DoxyParamCaption}\item[{sf\+::\+Render\+Window \&}]{window }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Draws the player on the screen. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em window} & The SFML render window. \\
+\hline
+\end{DoxyParams}
+
+
+Implements \mbox{\hyperlink{class_drawable_object_a190ee0fddc54afc6515baf81c5c4bd31}{Drawable\+Object}}.
+
+\Hypertarget{class_player_abe7d0a24ffd93ba0bc4eea860b10eb09}\label{class_player_abe7d0a24ffd93ba0bc4eea860b10eb09} 
+\index{Player@{Player}!update@{update}}
+\index{update@{update}!Player@{Player}}
+\doxysubsubsection{\texorpdfstring{update()}{update()}}
+{\footnotesize\ttfamily virtual void Player\+::update (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Updates the player\textquotesingle{}s position based on keyboard input. 
+
+
+
+Implements \mbox{\hyperlink{class_updatable_object_a636fd22c150d04566a4960cd69e93625}{Updatable\+Object}}.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{main_8cpp}{main.\+cpp}}\end{DoxyCompactItemize}

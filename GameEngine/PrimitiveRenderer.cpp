@@ -320,6 +320,13 @@ void PrimitiveRenderer::drawFilledPolygon(const std::vector<Point2D>& points, sf
 	convex.setFillColor(fillColor);
 	window.draw(convex);
 }
+
+void PrimitiveRenderer::drawFilledRectangle(float x, float y, float width, float height, sf::Color fillColor) {
+	sf::RectangleShape rectangle(sf::Vector2f(width, height));
+	rectangle.setPosition(x, y);
+	rectangle.setFillColor(fillColor);
+	window.draw(rectangle);
+}
 // Helper method to calculate orientation of triplet (p, q, r)
 // 0: Collinear points, 1: Clockwise, 2: Counterclockwise
 int PrimitiveRenderer::orientation(const Point2D& p, const Point2D& q, const Point2D& r) {

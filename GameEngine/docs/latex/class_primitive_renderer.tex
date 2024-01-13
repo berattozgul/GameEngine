@@ -1,0 +1,65 @@
+\doxysection{Primitive\+Renderer Class Reference}
+\hypertarget{class_primitive_renderer}{}\label{class_primitive_renderer}\index{PrimitiveRenderer@{PrimitiveRenderer}}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{class_primitive_renderer_a8de7bbe3c1c42a7d9f48f97a2dba3544}\label{class_primitive_renderer_a8de7bbe3c1c42a7d9f48f97a2dba3544} 
+{\bfseries Primitive\+Renderer} (sf\+::\+Render\+Window \&\+\_\+window)
+\item 
+\Hypertarget{class_primitive_renderer_a1c5d0ba24920082bbc178f3cea5fbff1}\label{class_primitive_renderer_a1c5d0ba24920082bbc178f3cea5fbff1} 
+void {\bfseries draw\+Rectangle} (float x, float y, float width, float height, sf\+::\+Color color)
+\item 
+\Hypertarget{class_primitive_renderer_ae17b6954c82de5653088336182b4b680}\label{class_primitive_renderer_ae17b6954c82de5653088336182b4b680} 
+void {\bfseries draw\+Circle} (float x, float y, float radius, sf\+::\+Color color)
+\item 
+\Hypertarget{class_primitive_renderer_a9a6edf38b753373f03819e58d3e6c327}\label{class_primitive_renderer_a9a6edf38b753373f03819e58d3e6c327} 
+void {\bfseries draw\+Line} (float x1, float y1, float x2, float y2, float thickness, sf\+::\+Color color)
+\item 
+\Hypertarget{class_primitive_renderer_aa792b142f3bea259c1fc749ec11318ce}\label{class_primitive_renderer_aa792b142f3bea259c1fc749ec11318ce} 
+void {\bfseries draw\+Point} (float x, float y, sf\+::\+Color color)
+\item 
+\Hypertarget{class_primitive_renderer_a1a5a3bb7e9b8b949146dc7b33442e52f}\label{class_primitive_renderer_a1a5a3bb7e9b8b949146dc7b33442e52f} 
+void {\bfseries draw\+Line\+Incremental} (int x1, int y1, int x2, int y2, sf\+::\+Color color)
+\item 
+\Hypertarget{class_primitive_renderer_a8ad1d84891cee38b8fda137481d4e395}\label{class_primitive_renderer_a8ad1d84891cee38b8fda137481d4e395} 
+void {\bfseries draw\+Ellipse} (float centerX, float centerY, float rx, float ry, sf\+::\+Color color)
+\item 
+\Hypertarget{class_primitive_renderer_a4a28a3149bc1e280f2663996a0ca6085}\label{class_primitive_renderer_a4a28a3149bc1e280f2663996a0ca6085} 
+void {\bfseries draw\+Circle\+Symmetrical} (float centerX, float centerY, float radius, sf\+::\+Color color)
+\item 
+\Hypertarget{class_primitive_renderer_a6e503fd60e7381fd9b125df7b841df25}\label{class_primitive_renderer_a6e503fd60e7381fd9b125df7b841df25} 
+void {\bfseries draw\+Polyline} (const std\+::vector$<$ \mbox{\hyperlink{class_point2_d}{Point2D}} $>$ \&points, sf\+::\+Color color, bool is\+Closed)
+\item 
+\Hypertarget{class_primitive_renderer_a77002fee14f53babb3f0a4ad6fce7394}\label{class_primitive_renderer_a77002fee14f53babb3f0a4ad6fce7394} 
+void {\bfseries draw\+Polyline} (const std\+::vector$<$ \mbox{\hyperlink{class_line_segment}{Line\+Segment}} $>$ \&segments, sf\+::\+Color color, bool is\+Closed)
+\item 
+\Hypertarget{class_primitive_renderer_aaa69db3033cf00bc5824bc99bd90a454}\label{class_primitive_renderer_aaa69db3033cf00bc5824bc99bd90a454} 
+void {\bfseries draw\+Polygon} (const std\+::vector$<$ \mbox{\hyperlink{class_point2_d}{Point2D}} $>$ \&points, sf\+::\+Color color)
+\item 
+\Hypertarget{class_primitive_renderer_a13552a06807fc16c5de59f2d43df4ba1}\label{class_primitive_renderer_a13552a06807fc16c5de59f2d43df4ba1} 
+void {\bfseries draw\+Polygon} (const std\+::vector$<$ \mbox{\hyperlink{class_line_segment}{Line\+Segment}} $>$ \&segments, sf\+::\+Color color)
+\item 
+\Hypertarget{class_primitive_renderer_affc284ea17f56e01f6e6851d0c912485}\label{class_primitive_renderer_affc284ea17f56e01f6e6851d0c912485} 
+void {\bfseries draw\+Filled\+Polygon} (const std\+::vector$<$ \mbox{\hyperlink{class_point2_d}{Point2D}} $>$ \&points, sf\+::\+Color fill\+Color)
+\item 
+\Hypertarget{class_primitive_renderer_ad94342191a8363cf334989e653c96dea}\label{class_primitive_renderer_ad94342191a8363cf334989e653c96dea} 
+void {\bfseries draw\+Filled\+Rectangle} (float x, float y, float width, float height, sf\+::\+Color fill\+Color)
+\item 
+\Hypertarget{class_primitive_renderer_a760b170e632534104f1b37afb356c33a}\label{class_primitive_renderer_a760b170e632534104f1b37afb356c33a} 
+void {\bfseries consistency\+Fill} (int x, int y, sf\+::\+Color fill\+Color, sf\+::\+Color target\+Color)
+\item 
+\Hypertarget{class_primitive_renderer_a137b7d9a9a9ef743751e723c6b332cbc}\label{class_primitive_renderer_a137b7d9a9a9ef743751e723c6b332cbc} 
+void {\bfseries parity\+Check\+Fill} (const std\+::vector$<$ \mbox{\hyperlink{class_point2_d}{Point2D}} $>$ \&points, sf\+::\+Color fill\+Color)
+\item 
+\Hypertarget{class_primitive_renderer_a1286fab5619417799aa3d515ebbdbd2c}\label{class_primitive_renderer_a1286fab5619417799aa3d515ebbdbd2c} 
+void {\bfseries border\+Fill} (int x, int y, sf\+::\+Color fill\+Color, sf\+::\+Color border\+Color)
+\item 
+\Hypertarget{class_primitive_renderer_aacd30e2a173918709f00a32adde9e280}\label{class_primitive_renderer_aacd30e2a173918709f00a32adde9e280} 
+void {\bfseries flood\+Fill} (int x, int y, sf\+::\+Color fill\+Color, sf\+::\+Color target\+Color)
+\end{DoxyCompactItemize}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+Primitive\+Renderer.\+h\item 
+Primitive\+Renderer.\+cpp\end{DoxyCompactItemize}

@@ -1,0 +1,64 @@
+\doxysection{Collision\+Handler Class Reference}
+\hypertarget{class_collision_handler}{}\label{class_collision_handler}\index{CollisionHandler@{CollisionHandler}}
+
+
+Handles collisions between game objects.  
+
+
+\doxysubsubsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static bool \mbox{\hyperlink{class_collision_handler_a1423e478f9c757df7f2b94b27aa1f2d0}{check\+Collision}} (const sf\+::\+Float\+Rect \&rect1, const sf\+::\+Float\+Rect \&rect2)
+\begin{DoxyCompactList}\small\item\em Checks if two rectangles intersect. \end{DoxyCompactList}\item 
+static void \mbox{\hyperlink{class_collision_handler_a0f40b6a5adc0321900fb41dc3219cadd}{handle\+Collision}} (sf\+::\+Render\+Window \&window, \mbox{\hyperlink{class_game_object}{Game\+Object}} \&obj1, \mbox{\hyperlink{class_game_object}{Game\+Object}} \&obj2)
+\begin{DoxyCompactList}\small\item\em Handles a collision event between two game objects. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Handles collisions between game objects. 
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_collision_handler_a1423e478f9c757df7f2b94b27aa1f2d0}\label{class_collision_handler_a1423e478f9c757df7f2b94b27aa1f2d0} 
+\index{CollisionHandler@{CollisionHandler}!checkCollision@{checkCollision}}
+\index{checkCollision@{checkCollision}!CollisionHandler@{CollisionHandler}}
+\doxysubsubsection{\texorpdfstring{checkCollision()}{checkCollision()}}
+{\footnotesize\ttfamily static bool Collision\+Handler\+::check\+Collision (\begin{DoxyParamCaption}\item[{const sf\+::\+Float\+Rect \&}]{rect1,  }\item[{const sf\+::\+Float\+Rect \&}]{rect2 }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}
+
+
+
+Checks if two rectangles intersect. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em rect1} & The first rectangle. \\
+\hline
+{\em rect2} & The second rectangle. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+True if the rectangles intersect, false otherwise. 
+\end{DoxyReturn}
+\Hypertarget{class_collision_handler_a0f40b6a5adc0321900fb41dc3219cadd}\label{class_collision_handler_a0f40b6a5adc0321900fb41dc3219cadd} 
+\index{CollisionHandler@{CollisionHandler}!handleCollision@{handleCollision}}
+\index{handleCollision@{handleCollision}!CollisionHandler@{CollisionHandler}}
+\doxysubsubsection{\texorpdfstring{handleCollision()}{handleCollision()}}
+{\footnotesize\ttfamily static void Collision\+Handler\+::handle\+Collision (\begin{DoxyParamCaption}\item[{sf\+::\+Render\+Window \&}]{window,  }\item[{\mbox{\hyperlink{class_game_object}{Game\+Object}} \&}]{obj1,  }\item[{\mbox{\hyperlink{class_game_object}{Game\+Object}} \&}]{obj2 }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}
+
+
+
+Handles a collision event between two game objects. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em window} & The SFML render window. \\
+\hline
+{\em obj1} & The first game object involved in the collision. \\
+\hline
+{\em obj2} & The second game object involved in the collision. \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{main_8cpp}{main.\+cpp}}\end{DoxyCompactItemize}

@@ -1,0 +1,71 @@
+\doxysection{main.\+cpp File Reference}
+\hypertarget{main_8cpp}{}\label{main_8cpp}\index{main.cpp@{main.cpp}}
+
+
+A simple game implemented in C++ using SFML.  
+
+
+{\ttfamily \#include $<$SFML/\+Graphics.\+hpp$>$}\newline
+{\ttfamily \#include $<$iostream$>$}\newline
+{\ttfamily \#include $<$vector$>$}\newline
+{\ttfamily \#include $<$cstdlib$>$}\newline
+{\ttfamily \#include $<$ctime$>$}\newline
+\doxysubsubsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \mbox{\hyperlink{class_game_object}{Game\+Object}}
+\begin{DoxyCompactList}\small\item\em The base class for all game objects. \end{DoxyCompactList}\item 
+class \mbox{\hyperlink{class_updatable_object}{Updatable\+Object}}
+\begin{DoxyCompactList}\small\item\em Virtual base class for objects that can be updated. \end{DoxyCompactList}\item 
+class \mbox{\hyperlink{class_drawable_object}{Drawable\+Object}}
+\begin{DoxyCompactList}\small\item\em Virtual base class for objects that can be drawn on the screen. \end{DoxyCompactList}\item 
+class \mbox{\hyperlink{class_transformable_object}{Transformable\+Object}}
+\begin{DoxyCompactList}\small\item\em Virtual base class for objects that can be transformed. \end{DoxyCompactList}\item 
+class \mbox{\hyperlink{class_shape_object}{Shape\+Object}}
+\begin{DoxyCompactList}\small\item\em Virtual base class for objects with a specific shape. \end{DoxyCompactList}\item 
+class \mbox{\hyperlink{class_point2_d}{Point2D}}
+\begin{DoxyCompactList}\small\item\em Represents a point in 2D space. \end{DoxyCompactList}\item 
+class \mbox{\hyperlink{class_line_segment}{Line\+Segment}}
+\item 
+class \mbox{\hyperlink{class_animated_object}{Animated\+Object}}
+\begin{DoxyCompactList}\small\item\em Represents an animated object in the game. \end{DoxyCompactList}\item 
+class \mbox{\hyperlink{class_bitmap_object}{Bitmap\+Object}}
+\begin{DoxyCompactList}\small\item\em Represents a bitmap object that can be drawn and transformed. \end{DoxyCompactList}\item 
+class \mbox{\hyperlink{class_sprite_object}{Sprite\+Object}}
+\begin{DoxyCompactList}\small\item\em Represents a sprite object that can be animated. \end{DoxyCompactList}\item 
+class \mbox{\hyperlink{class_ground_object}{Ground\+Object}}
+\begin{DoxyCompactList}\small\item\em Represents the ground object in the game. \end{DoxyCompactList}\item 
+class \mbox{\hyperlink{class_circle}{Circle}}
+\begin{DoxyCompactList}\small\item\em Represents a circle in the game with movement logic. \end{DoxyCompactList}\item 
+class \mbox{\hyperlink{class_rectangle}{Rectangle}}
+\begin{DoxyCompactList}\small\item\em Represents a rectangle in the game with movement and rotation logic. \end{DoxyCompactList}\item 
+class \mbox{\hyperlink{class_player}{Player}}
+\begin{DoxyCompactList}\small\item\em Represents the player character in the game. \end{DoxyCompactList}\item 
+class \mbox{\hyperlink{class_collision_handler}{Collision\+Handler}}
+\begin{DoxyCompactList}\small\item\em Handles collisions between game objects. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+int \mbox{\hyperlink{main_8cpp_ae66f6b31b5ad750f1fe042a706a4e3d4}{main}} ()
+\begin{DoxyCompactList}\small\item\em The main function that initializes the game and runs the game loop. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+A simple game implemented in C++ using SFML. 
+
+
+
+\doxysubsection{Function Documentation}
+\Hypertarget{main_8cpp_ae66f6b31b5ad750f1fe042a706a4e3d4}\label{main_8cpp_ae66f6b31b5ad750f1fe042a706a4e3d4} 
+\index{main.cpp@{main.cpp}!main@{main}}
+\index{main@{main}!main.cpp@{main.cpp}}
+\doxysubsubsection{\texorpdfstring{main()}{main()}}
+{\footnotesize\ttfamily int main (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+The main function that initializes the game and runs the game loop. 
+
+\begin{DoxyReturn}{Returns}
+The exit status of the program. 
+\end{DoxyReturn}

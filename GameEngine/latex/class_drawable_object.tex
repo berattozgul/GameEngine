@@ -1,0 +1,53 @@
+\doxysection{Drawable\+Object Class Reference}
+\hypertarget{class_drawable_object}{}\label{class_drawable_object}\index{DrawableObject@{DrawableObject}}
+
+
+Virtual base class for objects that can be drawn on the screen.  
+
+
+Inheritance diagram for Drawable\+Object\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=3.363364cm]{class_drawable_object}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+virtual void \mbox{\hyperlink{class_drawable_object_a190ee0fddc54afc6515baf81c5c4bd31}{draw}} (sf\+::\+Render\+Window \&window)=0
+\begin{DoxyCompactList}\small\item\em Pure virtual method to draw the object on the screen. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions inherited from \mbox{\hyperlink{class_game_object}{Game\+Object}}}
+\begin{DoxyCompactItemize}
+\item 
+virtual void \mbox{\hyperlink{class_game_object_ae83128d0e0efef691417779605ee037c}{update}} ()=0
+\begin{DoxyCompactList}\small\item\em Pure virtual method to update the game object. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Virtual base class for objects that can be drawn on the screen. 
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_drawable_object_a190ee0fddc54afc6515baf81c5c4bd31}\label{class_drawable_object_a190ee0fddc54afc6515baf81c5c4bd31} 
+\index{DrawableObject@{DrawableObject}!draw@{draw}}
+\index{draw@{draw}!DrawableObject@{DrawableObject}}
+\doxysubsubsection{\texorpdfstring{draw()}{draw()}}
+{\footnotesize\ttfamily virtual void Drawable\+Object\+::draw (\begin{DoxyParamCaption}\item[{sf\+::\+Render\+Window \&}]{window }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Pure virtual method to draw the object on the screen. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em window} & The SFML render window. \\
+\hline
+\end{DoxyParams}
+
+
+Implemented in \mbox{\hyperlink{class_point2_d_a5d62dd66ba70d76e04b705e73770bde4}{Point2D}}, \mbox{\hyperlink{class_line_segment_a0a77a0ea0fea9b7f27ac28fa4887f751}{Line\+Segment}}, \mbox{\hyperlink{class_ground_object_ae6cfac90af1a666381275631c603b36d}{Ground\+Object}}, \mbox{\hyperlink{class_circle_ae5c33b3278df974adf77bd0ac0d588a9}{Circle}}, \mbox{\hyperlink{class_rectangle_affea4ff55334987e2f46d81ef73692c7}{Rectangle}}, \mbox{\hyperlink{class_player_af12e01939b4fccf59b2e6ae56e11825d}{Player}}, \mbox{\hyperlink{class_bitmap_object_a69d53bc15b330a6c4384f117b973673d}{Bitmap\+Object}}, and \mbox{\hyperlink{class_shape_object_a09c61fbba350cf4e0bde9c56ca3c7980}{Shape\+Object}}.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{main_8cpp}{main.\+cpp}}\end{DoxyCompactItemize}

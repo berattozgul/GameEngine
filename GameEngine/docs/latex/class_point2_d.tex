@@ -1,0 +1,102 @@
+\doxysection{Point2D Class Reference}
+\hypertarget{class_point2_d}{}\label{class_point2_d}\index{Point2D@{Point2D}}
+Inheritance diagram for Point2D\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=4.000000cm]{class_point2_d}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{class_point2_d_a0262726e46d2f7c32e886d98ba6b72a1}\label{class_point2_d_a0262726e46d2f7c32e886d98ba6b72a1} 
+{\bfseries Point2D} (float x, float y)
+\item 
+virtual void \mbox{\hyperlink{class_point2_d_af3348c597329a84cfe3833754fa1a014}{translate}} (float dx, float dy) override
+\item 
+virtual void \mbox{\hyperlink{class_point2_d_a2f045c21793453fb48c63ab13f963d78}{rotate}} () override
+\item 
+virtual void \mbox{\hyperlink{class_point2_d_a076a34ec1dd4d8aadbe849ea67317d14}{update}} () override
+\item 
+virtual void \mbox{\hyperlink{class_point2_d_a1b79428db0edef3e176c0ce070ef9e8a}{scale}} () override
+\item 
+virtual void \mbox{\hyperlink{class_point2_d_a5d62dd66ba70d76e04b705e73770bde4}{draw}} (sf\+::\+Render\+Window \&window) override
+\item 
+\Hypertarget{class_point2_d_a3ad4c92ddc32fbb62c9b189355bd4530}\label{class_point2_d_a3ad4c92ddc32fbb62c9b189355bd4530} 
+{\bfseries Point2D} (float \+\_\+x, float \+\_\+y)
+\item 
+\Hypertarget{class_point2_d_a339d88c57e1d6627e40a45bc83ece4b5}\label{class_point2_d_a339d88c57e1d6627e40a45bc83ece4b5} 
+float {\bfseries getX} () const
+\item 
+\Hypertarget{class_point2_d_a488da1fb20a9fcac4243c77b9f4f731d}\label{class_point2_d_a488da1fb20a9fcac4243c77b9f4f731d} 
+float {\bfseries getY} () const
+\item 
+\Hypertarget{class_point2_d_a02f0fb9ccda22cde7d3e4fb5e1af1d5c}\label{class_point2_d_a02f0fb9ccda22cde7d3e4fb5e1af1d5c} 
+void {\bfseries setX} (float \+\_\+x)
+\item 
+\Hypertarget{class_point2_d_aa4ec5374ac54111cd30aed8a55404fa3}\label{class_point2_d_aa4ec5374ac54111cd30aed8a55404fa3} 
+void {\bfseries setY} (float \+\_\+y)
+\item 
+\Hypertarget{class_point2_d_a7f2dab1a1fd6dc7e83c8dc8693a77a37}\label{class_point2_d_a7f2dab1a1fd6dc7e83c8dc8693a77a37} 
+void {\bfseries draw} (\mbox{\hyperlink{class_primitive_renderer}{Primitive\+Renderer}} \&renderer, sf\+::\+Color color)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_point2_d_a5d62dd66ba70d76e04b705e73770bde4}\label{class_point2_d_a5d62dd66ba70d76e04b705e73770bde4} 
+\index{Point2D@{Point2D}!draw@{draw}}
+\index{draw@{draw}!Point2D@{Point2D}}
+\doxysubsubsection{\texorpdfstring{draw()}{draw()}}
+{\footnotesize\ttfamily virtual void Point2\+D\+::draw (\begin{DoxyParamCaption}\item[{sf\+::\+Render\+Window \&}]{window }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Implements \mbox{\hyperlink{class_shape_object}{Shape\+Object}}.
+
+\Hypertarget{class_point2_d_a2f045c21793453fb48c63ab13f963d78}\label{class_point2_d_a2f045c21793453fb48c63ab13f963d78} 
+\index{Point2D@{Point2D}!rotate@{rotate}}
+\index{rotate@{rotate}!Point2D@{Point2D}}
+\doxysubsubsection{\texorpdfstring{rotate()}{rotate()}}
+{\footnotesize\ttfamily virtual void Point2\+D\+::rotate (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Implements \mbox{\hyperlink{class_shape_object}{Shape\+Object}}.
+
+\Hypertarget{class_point2_d_a1b79428db0edef3e176c0ce070ef9e8a}\label{class_point2_d_a1b79428db0edef3e176c0ce070ef9e8a} 
+\index{Point2D@{Point2D}!scale@{scale}}
+\index{scale@{scale}!Point2D@{Point2D}}
+\doxysubsubsection{\texorpdfstring{scale()}{scale()}}
+{\footnotesize\ttfamily virtual void Point2\+D\+::scale (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Implements \mbox{\hyperlink{class_shape_object}{Shape\+Object}}.
+
+\Hypertarget{class_point2_d_af3348c597329a84cfe3833754fa1a014}\label{class_point2_d_af3348c597329a84cfe3833754fa1a014} 
+\index{Point2D@{Point2D}!translate@{translate}}
+\index{translate@{translate}!Point2D@{Point2D}}
+\doxysubsubsection{\texorpdfstring{translate()}{translate()}}
+{\footnotesize\ttfamily virtual void Point2\+D\+::translate (\begin{DoxyParamCaption}\item[{float}]{dx,  }\item[{float}]{dy }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Implements \mbox{\hyperlink{class_shape_object}{Shape\+Object}}.
+
+\Hypertarget{class_point2_d_a076a34ec1dd4d8aadbe849ea67317d14}\label{class_point2_d_a076a34ec1dd4d8aadbe849ea67317d14} 
+\index{Point2D@{Point2D}!update@{update}}
+\index{update@{update}!Point2D@{Point2D}}
+\doxysubsubsection{\texorpdfstring{update()}{update()}}
+{\footnotesize\ttfamily virtual void Point2\+D\+::update (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Implements \mbox{\hyperlink{class_game_object}{Game\+Object}}.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+main.\+cpp\item 
+Point2\+D.\+h\item 
+Point2\+D.\+cpp\end{DoxyCompactItemize}

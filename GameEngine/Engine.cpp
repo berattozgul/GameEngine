@@ -156,7 +156,8 @@ void Engine::render() {
 	// Use the borderFill and floodFill methods to fill areas
 	primitiveRenderer.borderFill(75, 75, sf::Color::Yellow, sf::Color::White); // Example of borderFill
 	primitiveRenderer.floodFill(250, 250, sf::Color::Cyan, sf::Color::White); // Example of floodFill
-
+	
+	primitiveRenderer.drawFilledRectangle(100.0f, 100.0f, 150.0f, 80.0f, sf::Color::Red);
 
 	primitiveRenderer.drawFilledPolygon(closedPolyLinePoints, sf::Color::Blue);
 

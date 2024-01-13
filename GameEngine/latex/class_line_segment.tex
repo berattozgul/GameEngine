@@ -1,0 +1,146 @@
+\doxysection{Line\+Segment Class Reference}
+\hypertarget{class_line_segment}{}\label{class_line_segment}\index{LineSegment@{LineSegment}}
+Inheritance diagram for Line\+Segment\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=4.000000cm]{class_line_segment}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{class_line_segment_a1d35edf1eb974053292e891acde2ed18}\label{class_line_segment_a1d35edf1eb974053292e891acde2ed18} 
+{\bfseries Line\+Segment} (const \mbox{\hyperlink{class_point2_d}{Point2D}} \&\+\_\+start\+Point, const \mbox{\hyperlink{class_point2_d}{Point2D}} \&\+\_\+end\+Point)
+\item 
+\Hypertarget{class_line_segment_a2435611de6a3d7687f1c30ce30bddb3d}\label{class_line_segment_a2435611de6a3d7687f1c30ce30bddb3d} 
+\mbox{\hyperlink{class_point2_d}{Point2D}} {\bfseries get\+Start\+Point} () const
+\item 
+\Hypertarget{class_line_segment_a5d767c4368ed394fd40ef6dc6b229883}\label{class_line_segment_a5d767c4368ed394fd40ef6dc6b229883} 
+\mbox{\hyperlink{class_point2_d}{Point2D}} {\bfseries get\+End\+Point} () const
+\item 
+\Hypertarget{class_line_segment_a06661c5046d41143846f7a1d4c041839}\label{class_line_segment_a06661c5046d41143846f7a1d4c041839} 
+void {\bfseries set\+Start\+Point} (const \mbox{\hyperlink{class_point2_d}{Point2D}} \&point)
+\item 
+\Hypertarget{class_line_segment_a5a25ebb5a94ddd353282dbf2caa5073e}\label{class_line_segment_a5a25ebb5a94ddd353282dbf2caa5073e} 
+void {\bfseries set\+End\+Point} (const \mbox{\hyperlink{class_point2_d}{Point2D}} \&point)
+\item 
+\Hypertarget{class_line_segment_a72ecfa89052e69fae8411854832ba987}\label{class_line_segment_a72ecfa89052e69fae8411854832ba987} 
+void {\bfseries draw} (\mbox{\hyperlink{class_primitive_renderer}{Primitive\+Renderer}} \&renderer, sf\+::\+Color color, bool use\+Incremental\+Algorithm=false)
+\item 
+\mbox{\hyperlink{class_line_segment_aadeda1d2761befbe317805be7b8af29a}{Line\+Segment}} (float startX, float startY, float endX, float endY)
+\begin{DoxyCompactList}\small\item\em Constructor for \doxylink{class_line_segment}{Line\+Segment}. \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{class_line_segment_ad970f6063c9f90476c9f15c040d78563}{translate}} (float dx, float dy) override
+\begin{DoxyCompactList}\small\item\em Translates the line segment by a given amount. \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{class_line_segment_a2a213e4b0642114ddd7a54c63336da66}{rotate}} () override
+\begin{DoxyCompactList}\small\item\em Not implemented for a line segment. \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{class_line_segment_a7f846ee45731eb62b8a342e48768dc55}{scale}} () override
+\begin{DoxyCompactList}\small\item\em Not implemented for a line segment. \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{class_line_segment_a0a77a0ea0fea9b7f27ac28fa4887f751}{draw}} (sf\+::\+Render\+Window \&window) override
+\begin{DoxyCompactList}\small\item\em Draws the line segment on the screen. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions inherited from \mbox{\hyperlink{class_game_object}{Game\+Object}}}
+\begin{DoxyCompactItemize}
+\item 
+virtual void \mbox{\hyperlink{class_game_object_ae83128d0e0efef691417779605ee037c}{update}} ()=0
+\begin{DoxyCompactList}\small\item\em Pure virtual method to update the game object. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{class_line_segment_aadeda1d2761befbe317805be7b8af29a}\label{class_line_segment_aadeda1d2761befbe317805be7b8af29a} 
+\index{LineSegment@{LineSegment}!LineSegment@{LineSegment}}
+\index{LineSegment@{LineSegment}!LineSegment@{LineSegment}}
+\doxysubsubsection{\texorpdfstring{LineSegment()}{LineSegment()}}
+{\footnotesize\ttfamily Line\+Segment\+::\+Line\+Segment (\begin{DoxyParamCaption}\item[{float}]{startX,  }\item[{float}]{startY,  }\item[{float}]{endX,  }\item[{float}]{endY }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Constructor for \doxylink{class_line_segment}{Line\+Segment}. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em startX} & The x-\/coordinate of the starting point. \\
+\hline
+{\em startY} & The y-\/coordinate of the starting point. \\
+\hline
+{\em endX} & The x-\/coordinate of the ending point. \\
+\hline
+{\em endY} & The y-\/coordinate of the ending point. \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_line_segment_a0a77a0ea0fea9b7f27ac28fa4887f751}\label{class_line_segment_a0a77a0ea0fea9b7f27ac28fa4887f751} 
+\index{LineSegment@{LineSegment}!draw@{draw}}
+\index{draw@{draw}!LineSegment@{LineSegment}}
+\doxysubsubsection{\texorpdfstring{draw()}{draw()}}
+{\footnotesize\ttfamily virtual void Line\+Segment\+::draw (\begin{DoxyParamCaption}\item[{sf\+::\+Render\+Window \&}]{window }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Draws the line segment on the screen. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em window} & The SFML render window. \\
+\hline
+\end{DoxyParams}
+
+
+Implements \mbox{\hyperlink{class_shape_object_a09c61fbba350cf4e0bde9c56ca3c7980}{Shape\+Object}}.
+
+\Hypertarget{class_line_segment_a2a213e4b0642114ddd7a54c63336da66}\label{class_line_segment_a2a213e4b0642114ddd7a54c63336da66} 
+\index{LineSegment@{LineSegment}!rotate@{rotate}}
+\index{rotate@{rotate}!LineSegment@{LineSegment}}
+\doxysubsubsection{\texorpdfstring{rotate()}{rotate()}}
+{\footnotesize\ttfamily virtual void Line\+Segment\+::rotate (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Not implemented for a line segment. 
+
+
+
+Implements \mbox{\hyperlink{class_shape_object_acb418927c526d6557a2d09f5f79eb791}{Shape\+Object}}.
+
+\Hypertarget{class_line_segment_a7f846ee45731eb62b8a342e48768dc55}\label{class_line_segment_a7f846ee45731eb62b8a342e48768dc55} 
+\index{LineSegment@{LineSegment}!scale@{scale}}
+\index{scale@{scale}!LineSegment@{LineSegment}}
+\doxysubsubsection{\texorpdfstring{scale()}{scale()}}
+{\footnotesize\ttfamily virtual void Line\+Segment\+::scale (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Not implemented for a line segment. 
+
+
+
+Implements \mbox{\hyperlink{class_shape_object_a64ca095ef9cf96247276d08812b97441}{Shape\+Object}}.
+
+\Hypertarget{class_line_segment_ad970f6063c9f90476c9f15c040d78563}\label{class_line_segment_ad970f6063c9f90476c9f15c040d78563} 
+\index{LineSegment@{LineSegment}!translate@{translate}}
+\index{translate@{translate}!LineSegment@{LineSegment}}
+\doxysubsubsection{\texorpdfstring{translate()}{translate()}}
+{\footnotesize\ttfamily virtual void Line\+Segment\+::translate (\begin{DoxyParamCaption}\item[{float}]{dx,  }\item[{float}]{dy }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Translates the line segment by a given amount. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em dx} & The translation in the x-\/axis. \\
+\hline
+{\em dy} & The translation in the y-\/axis. \\
+\hline
+\end{DoxyParams}
+
+
+Implements \mbox{\hyperlink{class_shape_object_a47c98eb4084806df56a05e8e8f89fc88}{Shape\+Object}}.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+Line\+Segment.\+h\item 
+\mbox{\hyperlink{main_8cpp}{main.\+cpp}}\item 
+Line\+Segment.\+cpp\end{DoxyCompactItemize}

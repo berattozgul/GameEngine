@@ -1,0 +1,62 @@
+\doxysection{Sprite\+Object Class Reference}
+\hypertarget{class_sprite_object}{}\label{class_sprite_object}\index{SpriteObject@{SpriteObject}}
+
+
+Represents a sprite object that can be animated.  
+
+
+Inheritance diagram for Sprite\+Object\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=4.000000cm]{class_sprite_object}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+virtual void \mbox{\hyperlink{class_sprite_object_ab2d091d126ef6cdfeeb2bb08e1bb9c41}{animate}} () override=0
+\begin{DoxyCompactList}\small\item\em Pure virtual method to perform animation. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions inherited from \mbox{\hyperlink{class_bitmap_object}{Bitmap\+Object}}}
+\begin{DoxyCompactItemize}
+\item 
+virtual void \mbox{\hyperlink{class_bitmap_object_a69d53bc15b330a6c4384f117b973673d}{draw}} (sf\+::\+Render\+Window \&window) override=0
+\begin{DoxyCompactList}\small\item\em Pure virtual method to draw the object on the screen. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions inherited from \mbox{\hyperlink{class_game_object}{Game\+Object}}}
+\begin{DoxyCompactItemize}
+\item 
+virtual void \mbox{\hyperlink{class_game_object_ae83128d0e0efef691417779605ee037c}{update}} ()=0
+\begin{DoxyCompactList}\small\item\em Pure virtual method to update the game object. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions inherited from \mbox{\hyperlink{class_transformable_object}{Transformable\+Object}}}
+\begin{DoxyCompactItemize}
+\item 
+virtual void \mbox{\hyperlink{class_transformable_object_a56a698a0888d5cb479bbc6fb1abf87ab}{translate}} (float x, float y)=0
+\begin{DoxyCompactList}\small\item\em Pure virtual method to translate the object\textquotesingle{}s position. \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{class_transformable_object_a11d5f41eb489a99405a230e3df8abf9d}{rotate}} ()=0
+\begin{DoxyCompactList}\small\item\em Pure virtual method to rotate the object. \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{class_transformable_object_a3a2ccbfd52264276ad27cc53aee25215}{scale}} ()=0
+\begin{DoxyCompactList}\small\item\em Pure virtual method to scale the object. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Represents a sprite object that can be animated. 
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_sprite_object_ab2d091d126ef6cdfeeb2bb08e1bb9c41}\label{class_sprite_object_ab2d091d126ef6cdfeeb2bb08e1bb9c41} 
+\index{SpriteObject@{SpriteObject}!animate@{animate}}
+\index{animate@{animate}!SpriteObject@{SpriteObject}}
+\doxysubsubsection{\texorpdfstring{animate()}{animate()}}
+{\footnotesize\ttfamily virtual void Sprite\+Object\+::animate (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [pure virtual]}}
+
+
+
+Pure virtual method to perform animation. 
+
+
+
+Implements \mbox{\hyperlink{class_animated_object_a355e94e568dd556b93ba55df7a3647f5}{Animated\+Object}}.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{main_8cpp}{main.\+cpp}}\end{DoxyCompactItemize}

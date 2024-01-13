@@ -30,7 +30,7 @@ public:
     void drawPolygon(const std::vector<LineSegment>& segments, sf::Color color);
     void drawFilledPolygon(const std::vector<Point2D>& points, sf::Color fillColor);
     // New methods for filling an area with color
-
+    void drawFilledRectangle(float x, float y, float width, float height, sf::Color fillColor);
 
 
     void consistencyFill(int x, int y, sf::Color fillColor, sf::Color targetColor);

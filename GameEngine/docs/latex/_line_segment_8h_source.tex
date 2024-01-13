@@ -1,0 +1,32 @@
+\doxysection{Line\+Segment.\+h}
+\hypertarget{_line_segment_8h_source}{}\label{_line_segment_8h_source}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ \textcolor{comment}{//\ LineSegment.h}}
+\DoxyCodeLine{00002\ }
+\DoxyCodeLine{00003\ \textcolor{preprocessor}{\#pragma\ once}}
+\DoxyCodeLine{00004\ }
+\DoxyCodeLine{00005\ \textcolor{preprocessor}{\#include\ "{}Point2D.h"{}}}
+\DoxyCodeLine{00006\ \textcolor{preprocessor}{\#include\ "{}PrimitiveRenderer.h"{}}}
+\DoxyCodeLine{00007\ }
+\DoxyCodeLine{00008\ \textcolor{keyword}{class\ }\mbox{\hyperlink{class_line_segment}{LineSegment}}\ \{}
+\DoxyCodeLine{00009\ \textcolor{keyword}{private}:}
+\DoxyCodeLine{00010\ \ \ \ \ \mbox{\hyperlink{class_point2_d}{Point2D}}\ startPoint;}
+\DoxyCodeLine{00011\ \ \ \ \ \mbox{\hyperlink{class_point2_d}{Point2D}}\ endPoint;}
+\DoxyCodeLine{00012\ }
+\DoxyCodeLine{00013\ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00014\ \ \ \ \ \mbox{\hyperlink{class_line_segment}{LineSegment}}(\textcolor{keyword}{const}\ \mbox{\hyperlink{class_point2_d}{Point2D}}\&\ \_startPoint,\ \textcolor{keyword}{const}\ \mbox{\hyperlink{class_point2_d}{Point2D}}\&\ \_endPoint);}
+\DoxyCodeLine{00015\ }
+\DoxyCodeLine{00016\ \ \ \ \ \mbox{\hyperlink{class_point2_d}{Point2D}}\ getStartPoint()\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00017\ \ \ \ \ \mbox{\hyperlink{class_point2_d}{Point2D}}\ getEndPoint()\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00018\ \ \ \ \ \textcolor{keywordtype}{void}\ setStartPoint(\textcolor{keyword}{const}\ \mbox{\hyperlink{class_point2_d}{Point2D}}\&\ point);}
+\DoxyCodeLine{00019\ \ \ \ \ \textcolor{keywordtype}{void}\ setEndPoint(\textcolor{keyword}{const}\ \mbox{\hyperlink{class_point2_d}{Point2D}}\&\ point);}
+\DoxyCodeLine{00020\ \ \ \ \ \textcolor{keywordtype}{void}\ draw(\mbox{\hyperlink{class_primitive_renderer}{PrimitiveRenderer}}\&\ renderer,\ sf::Color\ color,\ \textcolor{keywordtype}{bool}\ useIncrementalAlgorithm\ =\ \textcolor{keyword}{false});}
+\DoxyCodeLine{00021\ }
+\DoxyCodeLine{00022\ }
+\DoxyCodeLine{00023\ \textcolor{keyword}{private}:}
+\DoxyCodeLine{00024\ \ \ \ \ \textcolor{keywordtype}{void}\ drawDefault(\mbox{\hyperlink{class_primitive_renderer}{PrimitiveRenderer}}\&\ renderer,\ sf::Color\ color);}
+\DoxyCodeLine{00025\ }
+\DoxyCodeLine{00026\ \ \ \ \ \textcolor{keywordtype}{void}\ drawIncremental(\mbox{\hyperlink{class_primitive_renderer}{PrimitiveRenderer}}\&\ renderer,\ sf::Color\ color);}
+\DoxyCodeLine{00027\ \};}
+
+\end{DoxyCode}

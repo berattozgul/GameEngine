@@ -1,0 +1,42 @@
+\doxysection{Engine.\+h}
+\hypertarget{_engine_8h_source}{}\label{_engine_8h_source}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ \textcolor{preprocessor}{\#pragma\ once}}
+\DoxyCodeLine{00002\ \textcolor{preprocessor}{\#include\ <SFML/Graphics.hpp>}}
+\DoxyCodeLine{00003\ \textcolor{preprocessor}{\#include\ <fstream>}}
+\DoxyCodeLine{00004\ \textcolor{preprocessor}{\#include\ "{}PrimitiveRenderer.h"{}}}
+\DoxyCodeLine{00005\ }
+\DoxyCodeLine{00006\ \textcolor{keyword}{class\ }\mbox{\hyperlink{class_engine}{Engine}}\ \{}
+\DoxyCodeLine{00007\ \textcolor{keyword}{private}:}
+\DoxyCodeLine{00008\ \ \ \ \ sf::RenderWindow\ window;}
+\DoxyCodeLine{00009\ \ \ \ \ sf::Color\ clearColor;}
+\DoxyCodeLine{00010\ \ \ \ \ sf::Font\ font;}
+\DoxyCodeLine{00011\ \ \ \ \ sf::Text\ text;}
+\DoxyCodeLine{00012\ \ \ \ \ std::string\ inputText;}
+\DoxyCodeLine{00013\ \ \ \ \ sf::Clock\ clock;}
+\DoxyCodeLine{00014\ \ \ \ \ \textcolor{keywordtype}{bool}\ isRunning;}
+\DoxyCodeLine{00015\ \ \ \ \ std::ofstream\ logfile;}
+\DoxyCodeLine{00016\ \ \ \ \ \textcolor{keywordtype}{int}\ framesPerSecond;}
+\DoxyCodeLine{00017\ \ \ \ \ \textcolor{keywordtype}{bool}\ isMouseEnabled;}
+\DoxyCodeLine{00018\ \ \ \ \ \textcolor{keywordtype}{bool}\ isKeyboardEnabled;}
+\DoxyCodeLine{00019\ \ \ \ \ sf::RenderTexture\ renderTexture;}
+\DoxyCodeLine{00020\ \ \ \ \ sf::Sprite\ activeSprite;}
+\DoxyCodeLine{00021\ \ \ \ \ sf::Sprite\ inactiveSprite;}
+\DoxyCodeLine{00022\ \ \ \ \ \mbox{\hyperlink{class_primitive_renderer}{PrimitiveRenderer}}\ primitiveRenderer;}
+\DoxyCodeLine{00023\ }
+\DoxyCodeLine{00024\ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00025\ \ \ \ \ \mbox{\hyperlink{class_engine}{Engine}}(\textcolor{keywordtype}{int}\ width,\ \textcolor{keywordtype}{int}\ height,\ std::string\ title);}
+\DoxyCodeLine{00026\ }
+\DoxyCodeLine{00027\ \ \ \ \ \textcolor{keywordtype}{void}\ initialize();}
+\DoxyCodeLine{00028\ \ \ \ \ \textcolor{keywordtype}{void}\ setClearColor(sf::Color\ color);}
+\DoxyCodeLine{00029\ \ \ \ \ \textcolor{keywordtype}{void}\ setFramesPerSecond(\textcolor{keywordtype}{int}\ fps);}
+\DoxyCodeLine{00030\ \ \ \ \ \textcolor{keywordtype}{void}\ setMouseEnabled(\textcolor{keywordtype}{bool}\ enabled);}
+\DoxyCodeLine{00031\ \ \ \ \ \textcolor{keywordtype}{void}\ setKeyboardEnabled(\textcolor{keywordtype}{bool}\ enabled);}
+\DoxyCodeLine{00032\ \ \ \ \ \textcolor{keywordtype}{void}\ handleEvents();}
+\DoxyCodeLine{00033\ \ \ \ \ \textcolor{keywordtype}{void}\ update();}
+\DoxyCodeLine{00034\ \ \ \ \ \textcolor{keywordtype}{void}\ render();}
+\DoxyCodeLine{00035\ \ \ \ \ \textcolor{keywordtype}{void}\ run();}
+\DoxyCodeLine{00036\ \ \ \ \ \textcolor{keywordtype}{void}\ logError(\textcolor{keyword}{const}\ std::string\&\ errorMessage);}
+\DoxyCodeLine{00037\ \};}
+
+\end{DoxyCode}

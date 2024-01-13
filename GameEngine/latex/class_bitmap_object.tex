@@ -1,0 +1,62 @@
+\doxysection{Bitmap\+Object Class Reference}
+\hypertarget{class_bitmap_object}{}\label{class_bitmap_object}\index{BitmapObject@{BitmapObject}}
+
+
+Represents a bitmap object that can be drawn and transformed.  
+
+
+Inheritance diagram for Bitmap\+Object\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=4.000000cm]{class_bitmap_object}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+virtual void \mbox{\hyperlink{class_bitmap_object_a69d53bc15b330a6c4384f117b973673d}{draw}} (sf\+::\+Render\+Window \&window) override=0
+\begin{DoxyCompactList}\small\item\em Pure virtual method to draw the object on the screen. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions inherited from \mbox{\hyperlink{class_game_object}{Game\+Object}}}
+\begin{DoxyCompactItemize}
+\item 
+virtual void \mbox{\hyperlink{class_game_object_ae83128d0e0efef691417779605ee037c}{update}} ()=0
+\begin{DoxyCompactList}\small\item\em Pure virtual method to update the game object. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions inherited from \mbox{\hyperlink{class_transformable_object}{Transformable\+Object}}}
+\begin{DoxyCompactItemize}
+\item 
+virtual void \mbox{\hyperlink{class_transformable_object_a56a698a0888d5cb479bbc6fb1abf87ab}{translate}} (float x, float y)=0
+\begin{DoxyCompactList}\small\item\em Pure virtual method to translate the object\textquotesingle{}s position. \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{class_transformable_object_a11d5f41eb489a99405a230e3df8abf9d}{rotate}} ()=0
+\begin{DoxyCompactList}\small\item\em Pure virtual method to rotate the object. \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{class_transformable_object_a3a2ccbfd52264276ad27cc53aee25215}{scale}} ()=0
+\begin{DoxyCompactList}\small\item\em Pure virtual method to scale the object. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Represents a bitmap object that can be drawn and transformed. 
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_bitmap_object_a69d53bc15b330a6c4384f117b973673d}\label{class_bitmap_object_a69d53bc15b330a6c4384f117b973673d} 
+\index{BitmapObject@{BitmapObject}!draw@{draw}}
+\index{draw@{draw}!BitmapObject@{BitmapObject}}
+\doxysubsubsection{\texorpdfstring{draw()}{draw()}}
+{\footnotesize\ttfamily virtual void Bitmap\+Object\+::draw (\begin{DoxyParamCaption}\item[{sf\+::\+Render\+Window \&}]{window }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [pure virtual]}}
+
+
+
+Pure virtual method to draw the object on the screen. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em window} & The SFML render window. \\
+\hline
+\end{DoxyParams}
+
+
+Implements \mbox{\hyperlink{class_drawable_object_a190ee0fddc54afc6515baf81c5c4bd31}{Drawable\+Object}}.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{main_8cpp}{main.\+cpp}}\end{DoxyCompactItemize}

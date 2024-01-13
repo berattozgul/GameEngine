@@ -1,0 +1,149 @@
+\doxysection{Rectangle Class Reference}
+\hypertarget{class_rectangle}{}\label{class_rectangle}\index{Rectangle@{Rectangle}}
+
+
+Represents a rectangle in the game with movement and rotation logic.  
+
+
+Inheritance diagram for Rectangle\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=4.000000cm]{class_rectangle}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_rectangle_a2a204b9d657d6acd03a3493c2ae59e47}{Rectangle}} (float width, float height, float x, float y, float speed, float rotation\+Speed)
+\begin{DoxyCompactList}\small\item\em Constructor for \doxylink{class_rectangle}{Rectangle}. \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{class_rectangle_affea4ff55334987e2f46d81ef73692c7}{draw}} (sf\+::\+Render\+Window \&window) override
+\begin{DoxyCompactList}\small\item\em Draws the rectangle on the screen. \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{class_rectangle_a470bb3eef518cf4d6881bd33f88c089b}{translate}} (float dx, float dy) override
+\begin{DoxyCompactList}\small\item\em Translates the rectangle by a given amount. \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{class_rectangle_a7218c05d6c735aa28c0e1d1c6d180f40}{update}} () override
+\begin{DoxyCompactList}\small\item\em Updates the rectangle\textquotesingle{}s position within boundaries. \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{class_rectangle_a06bf16b55b54176bd74a7537210115eb}{rotate}} () override
+\begin{DoxyCompactList}\small\item\em Rotates the rectangle. \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{class_rectangle_a22d9101854ff5329b00f48afe53c32f4}{scale}} () override
+\begin{DoxyCompactList}\small\item\em Not implemented for a rectangle. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Represents a rectangle in the game with movement and rotation logic. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{class_rectangle_a2a204b9d657d6acd03a3493c2ae59e47}\label{class_rectangle_a2a204b9d657d6acd03a3493c2ae59e47} 
+\index{Rectangle@{Rectangle}!Rectangle@{Rectangle}}
+\index{Rectangle@{Rectangle}!Rectangle@{Rectangle}}
+\doxysubsubsection{\texorpdfstring{Rectangle()}{Rectangle()}}
+{\footnotesize\ttfamily Rectangle\+::\+Rectangle (\begin{DoxyParamCaption}\item[{float}]{width,  }\item[{float}]{height,  }\item[{float}]{x,  }\item[{float}]{y,  }\item[{float}]{speed,  }\item[{float}]{rotation\+Speed }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Constructor for \doxylink{class_rectangle}{Rectangle}. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em width} & The width of the rectangle. \\
+\hline
+{\em height} & The height of the rectangle. \\
+\hline
+{\em x} & The x-\/coordinate of the rectangle\textquotesingle{}s position. \\
+\hline
+{\em y} & The y-\/coordinate of the rectangle\textquotesingle{}s position. \\
+\hline
+{\em speed} & The speed of the rectangle\textquotesingle{}s movement. \\
+\hline
+{\em rotation\+Speed} & The speed of the rectangle\textquotesingle{}s rotation. \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_rectangle_affea4ff55334987e2f46d81ef73692c7}\label{class_rectangle_affea4ff55334987e2f46d81ef73692c7} 
+\index{Rectangle@{Rectangle}!draw@{draw}}
+\index{draw@{draw}!Rectangle@{Rectangle}}
+\doxysubsubsection{\texorpdfstring{draw()}{draw()}}
+{\footnotesize\ttfamily virtual void Rectangle\+::draw (\begin{DoxyParamCaption}\item[{sf\+::\+Render\+Window \&}]{window }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Draws the rectangle on the screen. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em window} & The SFML render window. \\
+\hline
+\end{DoxyParams}
+
+
+Implements \mbox{\hyperlink{class_shape_object_a09c61fbba350cf4e0bde9c56ca3c7980}{Shape\+Object}}.
+
+\Hypertarget{class_rectangle_a06bf16b55b54176bd74a7537210115eb}\label{class_rectangle_a06bf16b55b54176bd74a7537210115eb} 
+\index{Rectangle@{Rectangle}!rotate@{rotate}}
+\index{rotate@{rotate}!Rectangle@{Rectangle}}
+\doxysubsubsection{\texorpdfstring{rotate()}{rotate()}}
+{\footnotesize\ttfamily virtual void Rectangle\+::rotate (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Rotates the rectangle. 
+
+
+
+Implements \mbox{\hyperlink{class_shape_object_acb418927c526d6557a2d09f5f79eb791}{Shape\+Object}}.
+
+\Hypertarget{class_rectangle_a22d9101854ff5329b00f48afe53c32f4}\label{class_rectangle_a22d9101854ff5329b00f48afe53c32f4} 
+\index{Rectangle@{Rectangle}!scale@{scale}}
+\index{scale@{scale}!Rectangle@{Rectangle}}
+\doxysubsubsection{\texorpdfstring{scale()}{scale()}}
+{\footnotesize\ttfamily virtual void Rectangle\+::scale (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Not implemented for a rectangle. 
+
+
+
+Implements \mbox{\hyperlink{class_shape_object_a64ca095ef9cf96247276d08812b97441}{Shape\+Object}}.
+
+\Hypertarget{class_rectangle_a470bb3eef518cf4d6881bd33f88c089b}\label{class_rectangle_a470bb3eef518cf4d6881bd33f88c089b} 
+\index{Rectangle@{Rectangle}!translate@{translate}}
+\index{translate@{translate}!Rectangle@{Rectangle}}
+\doxysubsubsection{\texorpdfstring{translate()}{translate()}}
+{\footnotesize\ttfamily virtual void Rectangle\+::translate (\begin{DoxyParamCaption}\item[{float}]{dx,  }\item[{float}]{dy }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Translates the rectangle by a given amount. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em dx} & The translation in the x-\/axis. \\
+\hline
+{\em dy} & The translation in the y-\/axis. \\
+\hline
+\end{DoxyParams}
+
+
+Implements \mbox{\hyperlink{class_shape_object_a47c98eb4084806df56a05e8e8f89fc88}{Shape\+Object}}.
+
+\Hypertarget{class_rectangle_a7218c05d6c735aa28c0e1d1c6d180f40}\label{class_rectangle_a7218c05d6c735aa28c0e1d1c6d180f40} 
+\index{Rectangle@{Rectangle}!update@{update}}
+\index{update@{update}!Rectangle@{Rectangle}}
+\doxysubsubsection{\texorpdfstring{update()}{update()}}
+{\footnotesize\ttfamily virtual void Rectangle\+::update (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Updates the rectangle\textquotesingle{}s position within boundaries. 
+
+
+
+Implements \mbox{\hyperlink{class_game_object_ae83128d0e0efef691417779605ee037c}{Game\+Object}}.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{main_8cpp}{main.\+cpp}}\end{DoxyCompactItemize}
